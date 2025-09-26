@@ -127,7 +127,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
-  - $$mdi:bluetooth-off$$
+  - $$mdi:apple-keyboard-shift$$
   - OUT USB
   - OUT BLE
   - EP TOG
@@ -139,7 +139,7 @@ layers:
   - RGB BRI
   - RGB BRD
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:bluetooth-off$$
   - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
