@@ -7,7 +7,7 @@ layers:
   - F
   - P
   - B
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:arrow-up-bold$$
   - J
   - L
   - U
@@ -20,9 +20,9 @@ layers:
   - S
   - T
   - G
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:arrow-right-bold$$
   - M
   - N
   - E
@@ -35,8 +35,8 @@ layers:
   - C
   - D
   - V
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-space$$
+  - $$mdi:arrow-down-bold$$
   - K
   - H
   - {t: ',', s: <}
@@ -147,6 +147,3 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-combos:
-- p: [1, 15, 29]
-  k: '&soft_off'
