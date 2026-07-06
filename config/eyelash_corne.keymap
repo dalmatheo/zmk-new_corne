@@ -11,6 +11,29 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    behaviors {
+        td0: td0 {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "Shift/Caps Lock Tap Dance";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+        };
+
+        rsr_vol: rsr_vol {
+            compatible = "zmk,behavior-runtime-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            tap-ms = <5>;
+            cw-binding = <&kp C_VOL_UP>;
+            ccw-binding = <&kp C_VOL_DN>;
+        };
+
+        rsr_trans: rsr_trans {
+            compatible = "zmk,behavior-runtime-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            tap-ms = <0>;
+        };
+    };
+
     combos { compatible = "zmk,combos"; };
 
     keymap {
@@ -25,7 +48,7 @@
                           &kp LEFT_SHIFT  &mo 1  &kp RETURN                                &kp SPACE  &mo 2  &kp RIGHT_ALT
             >;
 
-            sensor-bindings = <&none>, <&none>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         lower_layer {
@@ -37,7 +60,7 @@
                                     &trans        &trans        &trans                                      &trans           &trans           &trans
             >;
 
-            sensor-bindings = <&none>, <&none>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         raise_layer {
@@ -49,7 +72,7 @@
                                          &trans         &trans            &trans                                &trans  &trans                &trans
             >;
 
-            sensor-bindings = <&none>, <&none>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
     };
 };
