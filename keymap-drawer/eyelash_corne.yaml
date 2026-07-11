@@ -6,7 +6,7 @@ layers:
   - W
   - F
   - P
-  - B
+  - G
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - J
   - L
@@ -19,11 +19,11 @@ layers:
   - R
   - S
   - T
-  - G
+  - D
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - M
+  - H
   - N
   - E
   - I
@@ -33,12 +33,12 @@ layers:
   - Z
   - X
   - C
-  - D
   - V
+  - B
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - K
-  - H
+  - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
